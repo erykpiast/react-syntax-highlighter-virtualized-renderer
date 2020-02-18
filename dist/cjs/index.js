@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactVirtualized = require("react-virtualized");
 
-var _reactSyntaxHighlighter = require("react-syntax-highlighter");
+var _reactSyntaxHighlighter = require("react-syntax-highlighter/dist/cjs/create-element");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -20,7 +20,7 @@ function rowRenderer(_ref, _ref2) {
   var index = _ref2.index,
       key = _ref2.key,
       style = _ref2.style;
-  return (0, _reactSyntaxHighlighter.createElement)({
+  return (0, _reactSyntaxHighlighter.default)({
     node: rows[index],
     stylesheet: stylesheet,
     style: style,

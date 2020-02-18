@@ -1,6 +1,6 @@
 import React from 'react';
 import { AutoSizer, List } from 'react-virtualized';
-import { createElement } from 'react-syntax-highlighter';
+import createElement from 'react-syntax-highlighter/dist/esm/create-element';
 
 function rowRenderer(_ref, _ref2) {
   var rows = _ref.rows,
